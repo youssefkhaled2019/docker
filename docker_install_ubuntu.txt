@@ -1,0 +1,19 @@
+ https://docs.docker.com/engine/install/ubuntu/
+ 
+ >>> curl -fsSL https://get.docker.com -o get-docker.sh
+ >>> sudo sh ./get-docker.sh --dry-run
+----------
+sudo usermod -aG docker USERNAME_  # for not write sudo with every comment run with django in lunix
+restart lunix
+
+<!-- https://docs.docker.com/engine/install/ubuntu/ -->
+sudo docker info
+
+
+ >>> sudo getent group
+ >>> groups
+ >>> sudo usermod -aG docker USERNAME_ #REMOVER SUDO FROM COMMENR DOCKER
+    RESTRAT VM
+
+---------------------------------------
+

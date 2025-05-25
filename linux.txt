@@ -1,0 +1,11 @@
+cat /etc/*hostname*  #name of  linux 
+cat /etc/*release*
+
+ps
+
+
+apt update
+apt upgrade
+
+
+

@@ -1,0 +1,39 @@
+docker.dockerfile
+---------------------------------------
+docker version
+docker info
+
+pull -> create  ->start      # run = pull + create + start
+-------------image----------------------
+docker image ls
+docker image pull fedora  #get fedora image
+docker image pull python  #get python image
+
+docker image rm  gh4 ff4  # use image id or name=repository
+docker image rm $(docker image ls -q)
+docker image rm $(docker image ls -q) -f
+
+docker image inspect b4d # show metadata for image 
+-------------container----------------------
+docker container ls -a
+
+docker container create -it  fedora bash # use  name image or id ima
+docker container start -i USERNAME_  or ID__ # or use id first 3 digit , i=interactive
+docker container stop   USERNAME_  or ID__
+
+docker container run -it python               #run= create+start
+exit() #for python
+exit   #for contaner
+
+docker container run -it python /bin/bash
+
+docker container run -it alpine:latest sh     # i intercative - t termanl
+docker container run -it python:latest
+docker container run --name sawsan -it ubuntu:latest /bin/bash
+docker container run -d --name webserver -p 80:80 nginx:latest               # open browser http://localhost:80
+
+docker container rm  gh4 ff4 # remove 2 container name call  gh4******* and ff4******
+docker container rm $(docker image ls -aq) -f
+
+
+docker container inspect 4fe 
